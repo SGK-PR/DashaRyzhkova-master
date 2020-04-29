@@ -28,10 +28,8 @@ namespace DashaRyzhkova
 
         public void butStart_Click(object sender, EventArgs e)
         {
-           for(int i=0;i<100;i++)
-            {
-                Thread.Sleep(50);
-            }
+           Thread thread = new Thread(Raschet);
+            thread.Start();
             
             
       
